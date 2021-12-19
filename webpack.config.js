@@ -39,8 +39,13 @@ module.exports={
             {
                 test: /\.css$/i,
                 use:[
-                    MiniCssExtractPlugin.loader,
-                    "css-loader"
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                          publicPath: "../",
+                        },
+                      },
+                      "css-loader",
                 ]
             },
 
@@ -55,6 +60,28 @@ module.exports={
                             }
                         },
                     ]   
+            },
+
+            {
+                test: /\.(svg|eot|woff|woff2|ttf)$/,
+                use: [
+                        {
+                            loader: 'file-loader',
+                            options:{
+                            outputPath:'fonts', 
+                            name:'[name].[ext]',
+                            esModule:false,           
+                            }
+                        },
+                    ]   
+            },
+
+            {
+                test: require.resolve("jquery"),
+                loader: "expose-loader",
+                options: {
+                  exposes: ["$", "jQuery"],
+                },
             },
         ]
     },
