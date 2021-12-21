@@ -8,4 +8,8 @@ import '@fortawesome/fontawesome-free/js/all.min.js';
 
 $(function () {
     $('[data-toggle="tooltip"]').tooltip();
+
+    $(".add-to-card-btn").click(function(){
+        alert('أضف المنتج الى عربة الشراء');
+    });
   });
