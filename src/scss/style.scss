@@ -1,0 +1,29 @@
+@import './_variables';
+@import './_custom-table';
+@import './_mixins';
+@import './_slider';
+@import './custom';
+
+.custom-btn-primary{
+    @include button-style($brand-primary);
+}
+
+.custom-btn-primary2{
+    color:#000 !important;
+    background-color:$brand-primary !important;
+    border-color:$brand-primary !important;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus{
+        color:#000 !important;
+        background-color:$btn-primary-color-dark !important;
+        border-color:$btn-primary-color-dark !important;
+    }
+}
+
+.custom-btn-danger{
+    @include button-style($brand-danger);
+}
