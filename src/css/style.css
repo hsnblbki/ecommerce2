@@ -895,6 +895,50 @@ SEARCH PAGE
 }
 
 /************************************************************
+*********************
+CONTACT PAGE
+************************
+*************************************************************/
+
+#map{
+    padding:0;
+}
+
+#contact-options{
+    margin-bottom: 25px;;
+}
+
+#contact-options h4{
+    font-size:18px;
+    padding-bottom:12px;
+}
+
+#contact-options .heading-with-border-bottom{
+    margin-bottom:30px;
+}
+
+#contact-info{
+    margin-bottom:25px;
+}
+
+#contact-info .fa-lg{
+    color:#f3af41;
+    font-size:18px;
+    margin:10px 10px 7px 10px;
+    width:25px;
+    text-align: center;
+}
+
+#form-subscription button{
+    padding: 4px 12px;
+}
+
+#contact-options textarea{
+    height:128px !important
+}
+
+
+/************************************************************
 *****************
 MEDIA QUERY
 *************************
@@ -1019,6 +1063,12 @@ MEDIA QUERY
 
     #form-advanced-search{
         margin-bottom: 30px;
+    }
+
+    /****contact page******/
+
+    #form-subscription{
+        padding-bottom: 40px;
     }
 
 }
