@@ -4,6 +4,9 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import 'jquery/dist/jquery.min.js';
 import 'popper.js/dist/popper.min.js';
 import '@fortawesome/fontawesome-free/js/all.min.js';
+import 'webpack-jquery-ui';
+import 'webpack-jquery-ui/css'; 
+import 'jquery-ui-touch-punch/jquery.ui.touch-punch.min.js';
 
 
 $(function () {
@@ -75,6 +78,18 @@ $(function () {
             $("#credit-card-info input").prop("disabled", false);
         };
         $("#credit-card-info").toggle();
+    });
+
+    $("#price-range").slider({
+        range: true,
+        min: 50,
+        max: 1000,
+        step:50,
+        values: [ 250, 800 ],
+        slide: function( event, ui ) {
+          $("#min-price").text(ui.values[0]);
+          $("#max-price").text(ui.values[1]);
+        }
     });
 
   });

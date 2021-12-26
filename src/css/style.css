@@ -803,6 +803,98 @@ PAYMENT PAGE
 }
 
 /************************************************************
+**************************
+SEARCH PAGE
+**************************
+************************************************************/
+
+#form-advanced-search{
+    border:1px solid #ebebeb;
+    height:max-content;
+    padding-bottom:20px;
+}
+
+#form-advanced-search .custom-panel{
+    border:none;
+    padding:5px;
+}
+
+#form-advanced-search .custom-panel .card-header{
+    background-color: transparent;
+    margin-bottom:15px;
+    padding:7px 10px 13px;
+}
+
+.custom-list-group>.list-group-item{
+    border:none;
+    padding:0 10px 14px 0;
+}
+
+#form-advanced-search .custom-panel label{
+    cursor: pointer;
+    font-weight:bold;
+}
+
+.custom-list-group>.list-group-item:last-child{
+    padding:0 10px 0 0;
+}
+
+.ui-slider{
+    margin:25px 0 15px;
+    height:2px !important;
+}
+
+.ui-slider .ui-slider-handle{
+    background-color:#f8ad47 !important;
+    height:12px;
+    width:12px;
+    border:none !important;
+    border-radius:50%;
+    top:-8px !important;
+}
+
+.ui-slider .ui-slider-range    {
+    border:1px solid #f8ad47 !important;
+    top:-1px !important;
+}
+
+.custom-pagination li a{
+    border:1px solid #ebebeb;
+    width:32px;
+    height:32px;
+    line-height:32px;
+    text-align:center;
+    color:#c2c2c2;
+    margin-left: 3px;
+    margin-right: 3px;
+    display:inline-block;
+    transition: all .3s ease;
+}
+
+.custom-pagination{
+    margin:25px 0;
+}
+
+
+.custom-pagination li.active a{
+    background-color: #f8ad47;
+    color:#fff;
+    border-color:#f8ad47;
+}
+
+.custom-pagination li a:hover,
+.custom-pagination li a:focus,
+.custom-pagination li a:active{
+    color:#ab7731;
+    border-color:#ab7731;
+}
+
+#search-results .custom-thumbnail{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+/************************************************************
 *****************
 MEDIA QUERY
 *************************
@@ -915,6 +1007,18 @@ MEDIA QUERY
         line-height:40px;
         margin:10px;
         font-size:20px;
+    }
+
+    /****search page****/
+
+    .ui-slider .ui-slider-handle{
+        height:20px !important;
+        width:20px !important;
+        top:-10px !important;
+    }
+
+    #form-advanced-search{
+        margin-bottom: 30px;
     }
 
 }
